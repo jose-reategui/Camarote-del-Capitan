@@ -1,0 +1,75 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+    name="description"
+    content="Conversa con una versión ficticia del capitán Jack Sparrow mediante inteligencia artificial."
+    >
+    <title>Charlas con el capitán Jack Sparrow</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script type="module" src="/app.js"></script>
+</head>
+<body>
+    <header class="site-header">
+    <a class="site-brand" href="/home" data-link>
+        El camarote del capitán
+    </a>
+
+    <nav aria-label="Navegación principal">
+        <a href="/home" data-link>Inicio</a>
+        <a href="/chat" data-link>Chat</a>
+        <a href="/about" data-link>Acerca de</a>
+    </nav>
+    </header>
+
+    <main id="app">
+    <section class="chat" aria-labelledby="chat-title">
+    <header class="chat-header">
+        <h1 id="chat-title">Capitán Jack Sparrow</h1>
+        <p>Sube a bordo y comienza una conversación.</p>
+    </header>
+
+    <div
+        id="messages"
+        class="messages"
+        role="log"
+        aria-label="Mensajes de la conversación"
+        aria-live="polite"
+    >
+        <article class="message message-character">
+        <p class="message-author">Jack Sparrow</p>
+        <p>¿Vienes por una aventura o necesitas un capitán?</p>
+        </article>
+
+        <article class="message message-user">
+        <p class="message-author">Tú</p>
+        <p>Estoy buscando una aventura.</p>
+        </article>
+    </div>
+
+    <p id="chat-status" class="chat-status" role="status"></p>
+
+    <form id="chat-form" class="chat-form">
+
+        <label for="message-input">Tu mensaje</label>
+            <div class="chat-controls">
+            <input
+                id="message-input"
+                name="message"
+                type="text"
+                placeholder="Escribe al capitán..."
+                maxlength="1000"
+                required
+            >
+            <button type="submit">Enviar</button>
+            </div>
+        </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>Proyecto educativo. Personaje simulado mediante IA.</p>
+    </footer>
+</body>
+</html>
