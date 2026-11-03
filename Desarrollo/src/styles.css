@@ -215,3 +215,19 @@ button:hover {
         padding: 1.5rem;
     }
 }
+
+button:disabled,
+input:disabled {
+    opacity: 0.65;
+    cursor: not-allowed;
+}
+
+.chat-status.is-error {
+    color: #ffb4ab;
+}
+
+/* Permite que el mensaje de error ocupe varias líneas. */
+.chat-status {
+    padding-bottom: 0.5rem;
+    overflow-wrap: anywhere;
+}
